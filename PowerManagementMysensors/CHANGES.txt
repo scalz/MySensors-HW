@@ -1,3 +1,12 @@
+June 2015 (scalz)
+- Original DCBooster 3v replaced by MCP1640
+- LM8364 2v supervisor added
+- Different reference components change (mosfet SI2399)
+- arduino pin routing changed (irq for 2v supervisor
+- power connector removed as I don't need it for my needs
+- jumper for vbat_sample removed. Maybe it will come back. Need to test
+- Eagle Files
+
 June 10 2015 (Patrick Fallberg):
     First version of my generic MySensors node
     
