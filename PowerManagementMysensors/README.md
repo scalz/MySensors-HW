@@ -49,3 +49,5 @@ TODO :
 Links, reference and license : 
 https://github.com/fallberg/MySensorsNode
 https://hallard.me/category/ulpnode/
+
+All designs are released under the CERN Open Hardware Licence v1.2.
