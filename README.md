@@ -8,3 +8,5 @@ My personal Workspace for MySensors Hardware
 
 - PowerManagementMySensorNode : still in dev (waiting for pcb). I mixed Anticimex(Patrick Fallberg) SensorsNode with functionalities of ulpnode. All credits to them for concepts and idea. Here is my version.
 
+- MysensorsATSHA_EEprom : A simple breadboard to add to existing Mysensors node. still in dev (waiting for pcb).
+
