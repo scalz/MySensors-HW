@@ -1,4 +1,5 @@
 June 2015 (scalz)
+- NRF24 smd module footprint added
 - Original DCBooster 3v replaced by MCP1640
 - LM8364 2v supervisor added
 - Different reference components change (mosfet SI2399)

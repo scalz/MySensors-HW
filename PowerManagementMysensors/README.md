@@ -2,6 +2,9 @@
 
 I mixed Anticimex(Patrick Fallberg) SensorsNode (in dev) with functionalities of ulpnode, to fit my needs. All credits to them for concepts and idea (links below). Here is my version still in dev.
 
+PowerManagementMysensors is for nrf24/RFM69
+PowerManagementMysensors2 is for nrf24 smd module/RFM69
+
 - Arduino pro mini connector
 
 - C1 : Storage capacitor if using Ultra Low power Node 
