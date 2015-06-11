@@ -21,19 +21,20 @@ PowerManagementMysensors2 is for nrf24 smd module/RFM69
 - D4 PIN : Output : Enable/disable Sensors 3V Rail 
 - D5 PIN : Output : enable/disable DC Boost 3v
 
-Connectors : 
-- +3V Sensors 
-- +5V GND 
-- J1 : free. connected to TX 
-- J2 : free. connected to RX 
-- J3 : free. connected to D3 INT1 (jumper config) 
-- J4 : free. connected to D6. PWM 
-- J5 : free. connected to A6. ADC1 
-- J6 : free. connected to A7. ADC2 
-- J7 : free. SPI CSN. connected to D7. 
-- J8 : free. connected to D3. INT2 (jumper config) 
-- J9 : I2C1 
-- J10 : I2C2
+Connectors :
+- +3V Sensors
+- +5V
+- GND
+- J1 : free. connected to TX
+- J2 : free. connected to RX
+- J3 : free. connected to D3 INT2 (jumper config)
+- J4 : free. connected to D6. PWM
+- J5 : free. connected to A6. ADC1
+- J6 : free. connected to A7. ADC2
+- J7 : I2C1
+- J8 : I2C2
+- J9 : free. SPI CSN. connected to D7.
+- J10 : free. connected to D2. INT1 (jumper config)
 
 - FLASH for OTA
 - ATSHA204A authentication
