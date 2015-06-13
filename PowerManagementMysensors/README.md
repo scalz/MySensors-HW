@@ -53,6 +53,8 @@ TODO :
 
 Links, reference and license : 
 
+Copyright Pascal Moreau (2015). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
+
 - For https://github.com/fallberg/MySensorsNode,
 
 Copyright Patrick Fallberg (2015). All designs are released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
@@ -60,3 +62,4 @@ Copyright Patrick Fallberg (2015). All designs are released under the [CERN Open
 - For https://hallard.me/category/ulpnode/, 
 
 Copyright Charles-Henri Hallard (2014). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
+
