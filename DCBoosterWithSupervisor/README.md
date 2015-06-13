@@ -1,8 +1,9 @@
 # DCBoosterWithSupervisor 
 
 
-It is a small board with only DCBooster3V and 2V Supervisor for power management. It might be used to add functionality in Mysensorsnodes. Based on ulpnode idea.
+It is a small board with only DCBooster3V and 2V Supervisor for power management. It can be used to add functionality in Mysensorsnodes. 
 
+still in dev
 
 TODO : 
 - add pin description
@@ -11,5 +12,6 @@ TODO :
 - custom bootloader
 
 
-Links, reference and license : 
-https://hallard.me/category/ulpnode/
+Links, reference and license :
+
+Copyright Pascal Moreau (2015). Attribution-ShareAlike CC BY-SA
