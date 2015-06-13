@@ -53,7 +53,7 @@ TODO :
 
 Links, reference and license : 
 
-Copyright Pascal Moreau (2015). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
+Copyright scalz (2015). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
 
 - For https://github.com/fallberg/MySensorsNode,
 
