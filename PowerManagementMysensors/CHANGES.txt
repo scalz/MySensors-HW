@@ -7,6 +7,7 @@ June 2015 (scalz)
 - power connector removed as I don't need it for my needs
 - jumper for vbat_sample removed. Maybe it will come back. Need to test
 - Eagle Files
+- resistor + zener added to Flash memory. To avoid fry
 
 June 10 2015 (Patrick Fallberg):
     First version of my generic MySensors node
