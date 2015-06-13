@@ -17,7 +17,7 @@ PowerManagementMysensors2 is for nrf24 smd module/RFM69
 
 - A0 PIN : ADC Input used for reading C1 voltage 
 - A1 PIN : Output : Enable/disable RF VCC 
-- A2 PIN : ADC Input used for reading battery voltage 
+- A2 PIN : ADC Input used for reading battery voltage (<5v)
 - D4 PIN : Output : Enable/disable Sensors 3V Rail 
 - D5 PIN : Output : enable/disable DC Boost 3v
 
@@ -31,8 +31,8 @@ Connectors :
 - J4 : free. connected to D6. PWM
 - J5 : free. connected to A6. ADC1
 - J6 : free. connected to A7. ADC2
-- J7 : I2C1
-- J8 : I2C2
+- J7 : I2C1 (A4 SDA, A5 SCL)
+- J8 : I2C2 (A4 SDA, A5 SCL)
 - J9 : free. SPI CSN. connected to D7.
 - J10 : free. connected to D2. INT1 (jumper config)
 
