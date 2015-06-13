@@ -2,6 +2,8 @@
 
 I mixed Anticimex(Patrick Fallberg) SensorsNode (in dev) with functionalities of ulpnode, to fit my needs. All credits to them for concepts and idea (links below). Here is my version still in dev.
 
+Size : 50x44 (mm)
+
 PowerManagementMysensors is for nrf24/RFM69
 PowerManagementMysensors2 is for nrf24 smd module/RFM69
 

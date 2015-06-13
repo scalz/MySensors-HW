@@ -228,7 +228,6 @@
 <wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4478" x2="-0.4318" y2="1.4478" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.7874" y1="-1.4478" x2="0.7874" y2="-1.4478" width="0.1524" layer="51"/>
 <wire x1="0.7874" y1="-1.4478" x2="0.7874" y2="-1.1938" width="0.1524" layer="51"/>
 <wire x1="0.7874" y1="-1.1938" x2="0.7874" y2="-0.7112" width="0.1524" layer="51"/>
@@ -261,7 +260,6 @@
 <wire x1="1.4986" y1="0.7112" x2="1.4986" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="1.4986" y1="1.1938" x2="0.7874" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.4478" x2="-0.3048" y2="1.4478" width="0" layer="51" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-4.7244" y="2.1082" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.6642" y="-4.1148" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -313,7 +311,6 @@
 <wire x1="0.3048" y1="1.524" x2="-0.2794" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-0.7112" y1="0.3302" x2="-0.7112" y2="-0.3302" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.524" x2="-0.1016" y2="1.2446" width="0.1524" layer="21" curve="-110"/>
-<text x="-1.9304" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.7112" y1="-1.524" x2="0.7112" y2="-1.524" width="0" layer="51"/>
 <wire x1="0.7112" y1="-1.524" x2="0.7112" y2="-0.254" width="0" layer="51"/>
 <wire x1="0.7112" y1="-0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
@@ -336,7 +333,6 @@
 <wire x1="1.3208" y1="-0.254" x2="1.3208" y2="0.254" width="0" layer="51"/>
 <wire x1="1.3208" y1="0.254" x2="0.7112" y2="0.254" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.524" x2="-0.3048" y2="1.524" width="0" layer="51" curve="-180"/>
-<text x="-1.9304" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -350,7 +346,6 @@
 <wire x1="-0.2286" y1="-1.0668" x2="0.2286" y2="-1.0668" width="0.1524" layer="21"/>
 <wire x1="0.2286" y1="1.0668" x2="-0.2286" y2="1.0668" width="0.1524" layer="21"/>
 <wire x1="0.127" y1="0.7874" x2="-0.127" y2="0.7874" width="0.1524" layer="21" curve="-49"/>
-<text x="-1.8796" y="0.8636" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.7112" y1="-1.0668" x2="0.7112" y2="-1.0668" width="0" layer="51"/>
 <wire x1="0.7112" y1="-1.0668" x2="0.7112" y2="-0.7874" width="0" layer="51"/>
 <wire x1="0.7112" y1="-0.7874" x2="0.7112" y2="-0.508" width="0" layer="51"/>
@@ -388,7 +383,6 @@
 <wire x1="1.1938" y1="0.508" x2="1.1938" y2="0.7874" width="0" layer="51"/>
 <wire x1="1.1938" y1="0.7874" x2="0.7112" y2="0.7874" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.0668" x2="-0.3048" y2="1.0668" width="0" layer="51" curve="-180"/>
-<text x="-1.8796" y="0.8636" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -418,17 +412,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="1210">
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
-<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
-<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="1206">
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -1111,7 +1101,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="38.7477" y="1.0922" size="0.6096" layer="26" ratio="10" rot="SMR90"/>
 <attribute name="VALUE" x="32.9057" y="-1.1684" size="2.0828" layer="28" ratio="10" rot="SMR90"/>
 </element>
-<element name="L1" library="SparkFun-Passives" package="1210" value="4.7uH" x="43.3451" y="4.1529" smashed="yes" rot="MR270">
+<element name="L1" library="SparkFun-Passives" package="0805" value="4.7uH" x="43.3451" y="4.1529" smashed="yes" rot="MR270">
 <attribute name="NAME" x="45.4105" y="4.0131" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="44.0451" y="5.0529" size="0.4064" layer="28" rot="MR270"/>
 </element>
@@ -1225,7 +1215,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="48.1711" y="10.668" size="0.6096" layer="26" ratio="10" rot="SMR270"/>
 <attribute name="VALUE" x="50.4825" y="13.6144" size="2.0828" layer="28" ratio="10" rot="SMR270"/>
 </element>
-<element name="L2" library="SparkFun-Passives" package="1210" value="4.7uH" x="43.2435" y="10.16" smashed="yes" rot="MR270">
+<element name="L2" library="SparkFun-Passives" package="0805" value="4.7uH" x="43.2435" y="10.16" smashed="yes" rot="MR270">
 <attribute name="NAME" x="41.6513" y="10.4012" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="43.9435" y="11.06" size="0.4064" layer="28" rot="MR270"/>
 </element>
@@ -1404,8 +1394,10 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$1">
 <contactref element="L1" pad="2"/>
 <contactref element="U4" pad="1"/>
-<wire x1="43.3451" y1="2.5529" x2="38.7094" y2="2.5275" width="0.4064" layer="16"/>
-<wire x1="38.7094" y1="2.5275" x2="38.0873" y2="3.1496" width="0.4064" layer="16"/>
+<wire x1="38.0873" y1="3.1496" x2="38.0873" y2="2.8575" width="0.6096" layer="16"/>
+<wire x1="38.0873" y1="2.8575" x2="38.7096" y2="2.2352" width="0.6096" layer="16"/>
+<wire x1="38.7096" y1="2.2352" x2="42.3274" y2="2.2352" width="0.6096" layer="16"/>
+<wire x1="42.3274" y1="2.2352" x2="43.3451" y2="3.2529" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R2" pad="1"/>
@@ -1812,8 +1804,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="L2" pad="2"/>
 <wire x1="46.0375" y1="9.1186" x2="46.0375" y2="8.1915" width="0.6096" layer="16"/>
 <wire x1="46.0375" y1="8.1915" x2="45.72" y2="7.874" width="0.6096" layer="16"/>
-<wire x1="45.72" y1="7.874" x2="43.9295" y2="7.874" width="0.6096" layer="16"/>
-<wire x1="43.9295" y1="7.874" x2="43.2435" y2="8.56" width="0.6096" layer="16"/>
+<wire x1="45.72" y1="7.874" x2="44.196" y2="7.874" width="0.6096" layer="16"/>
+<wire x1="44.196" y1="7.874" x2="43.18" y2="8.89" width="0.6096" layer="16"/>
+<wire x1="43.18" y1="8.89" x2="43.18" y2="9.1965" width="0.6096" layer="16"/>
+<wire x1="43.18" y1="9.1965" x2="43.2435" y2="9.26" width="0.6096" layer="16"/>
 </signal>
 <signal name="V+5">
 <contactref element="U5" pad="2"/>
@@ -1856,20 +1850,20 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="L2" pad="1"/>
 <contactref element="JP3" pad="1"/>
 <wire x1="45.3771" y1="11.2014" x2="45.3771" y2="9.1186" width="0.4064" layer="16"/>
-<wire x1="43.31" y1="11.8265" x2="43.2435" y2="11.76" width="0.4064" layer="16"/>
 <wire x1="43.31" y1="15.8175" x2="43.3675" y2="15.875" width="0.4064" layer="16"/>
-<wire x1="43.31" y1="11.8265" x2="43.31" y2="11.935" width="0.4064" layer="16"/>
-<wire x1="43.31" y1="11.935" x2="43.2465" y2="11.935" width="0.4064" layer="16"/>
-<wire x1="43.2465" y1="11.935" x2="40.386" y2="14.7955" width="0.8128" layer="16"/>
 <wire x1="40.386" y1="14.7955" x2="40.386" y2="14.986" width="0.8128" layer="16"/>
 <wire x1="40.386" y1="14.986" x2="41.275" y2="15.875" width="0.8128" layer="16"/>
 <wire x1="41.275" y1="15.875" x2="43.3675" y2="15.875" width="0.8128" layer="16"/>
 <polygon width="0.254" layer="16">
 <vertex x="41.91" y="12.065"/>
-<vertex x="41.91" y="10.16"/>
-<vertex x="45.339" y="10.16"/>
+<vertex x="41.9354" y="10.541"/>
+<vertex x="45.3644" y="10.541"/>
 <vertex x="45.339" y="12.065"/>
 </polygon>
+<wire x1="40.386" y1="14.7955" x2="40.386" y2="14.6812" width="0.8128" layer="16"/>
+<wire x1="40.386" y1="14.6812" x2="43.2054" y2="11.8618" width="0.8128" layer="16"/>
+<wire x1="43.2054" y1="11.8618" x2="43.2054" y2="11.0981" width="0.8128" layer="16"/>
+<wire x1="43.2054" y1="11.0981" x2="43.2435" y2="11.06" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U4" pad="5"/>
@@ -2137,7 +2131,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="41.91" y="4.2672"/>
 <vertex x="44.8056" y="4.2926"/>
 <vertex x="44.7802" y="6.4008"/>
-<vertex x="44.7548" y="7.1628"/>
+<vertex x="43.2562" y="6.731"/>
 <vertex x="41.0972" y="7.1628"/>
 <vertex x="40.64" y="7.62"/>
 </polygon>
