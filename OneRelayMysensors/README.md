@@ -18,7 +18,3 @@ TODO :
 - add gerbers for Seeed, Itead, and OSH fabhouses.
 
 
-
-Links, reference and license : 
-
-Copyright Pascal Moreau (2015). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
