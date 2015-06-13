@@ -47,8 +47,6 @@ Connectors :
 
 
 TODO : 
-- add pin description
-- add Bill of Materials
 - add gerbers for Seeed, Itead, and OSH fabhouses.
 - custom bootloader
 
