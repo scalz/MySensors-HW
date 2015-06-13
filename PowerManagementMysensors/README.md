@@ -4,8 +4,9 @@ I mixed Anticimex(Patrick Fallberg) SensorsNode (in dev) with functionalities of
 
 Size : 50x44 (mm)
 
-PowerManagementMysensors is for nrf24/RFM69
-PowerManagementMysensors2 is for nrf24 smd module/RFM69
+PowerManagementMysensors : nrf24/RFM69
+
+PowerManagementMysensors2 : nrf24 smd module/RFM69
 
 - Arduino pro mini connector
 
