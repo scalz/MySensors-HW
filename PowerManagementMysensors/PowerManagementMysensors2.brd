@@ -160,8 +160,6 @@
 <wire x1="49.51" y1="0" x2="49.51" y2="44.12" width="0" layer="20"/>
 <wire x1="49.51" y1="44.12" x2="0" y2="44.12" width="0" layer="20"/>
 <wire x1="0" y1="44.12" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="44.12" x2="0" y2="0" x3="-2.54" y3="22.06" textsize="0.8128" layer="20"/>
-<dimension x1="49.51" y1="44.12" x2="0" y2="44.12" x3="24.755" y3="46.99" textsize="0.8128" layer="20"/>
 <text x="46.99" y="43.18" size="0.8128" layer="21">5V</text>
 <text x="44.45" y="43.18" size="0.8128" layer="21">3V</text>
 <text x="41.275" y="43.18" size="0.8128" layer="21">GND</text>
