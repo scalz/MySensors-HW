@@ -12,6 +12,4 @@ TODO :
 - custom bootloader
 
 
-Links, reference and license :
 
-Copyright Pascal Moreau (2015). Attribution-ShareAlike CC BY-SA
