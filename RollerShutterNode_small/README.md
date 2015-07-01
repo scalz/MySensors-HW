@@ -18,10 +18,10 @@ Note : it is still in dev.
 - 42mm x 43mm
 
 Arduino Pin description :
-A0 : ADC ACS712
-A3 : ATSHA204A data
-D6 : Down Relay
-D7 : Up relay
+- A0 : ADC ACS712
+- A3 : ATSHA204A data
+- D6 : Down Relay
+- D7 : Up relay
 
 DC connectors : 
 - SPI for programming Atmel328p
