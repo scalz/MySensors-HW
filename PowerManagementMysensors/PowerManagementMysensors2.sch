@@ -5827,6 +5827,12 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <wire x1="312.42" y1="-50.8" x2="307.34" y2="-50.8" width="0.1524" layer="91"/>
 <label x="307.34" y="-50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="NRF_SMD" gate="G$1" pin="3V"/>
+<wire x1="292.1" y1="12.7" x2="281.94" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<label x="287.02" y="12.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -6346,13 +6352,6 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <wire x1="35.56" y1="-10.16" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="NRF_SMD" gate="G$1" pin="3V"/>
-<wire x1="292.1" y1="12.7" x2="281.94" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!HOLD"/>
@@ -6394,6 +6393,25 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,193.04,-91.44,IC2,VCC,N$16,,,"/>
+<approved hash="104,1,312.42,-58.42,RFM69,VCC,VCC_RF,,,"/>
+<approved hash="113,1,103.271,64.77,C1,,,,,"/>
+<approved hash="113,1,382.863,42.9853,J5,,,,,"/>
+<approved hash="113,1,419.777,42.9853,J6,,,,,"/>
+<approved hash="113,1,84.7569,81.6695,JP2,,,,,"/>
+<approved hash="113,1,140.637,79.1295,JP3,,,,,"/>
+<approved hash="113,1,249.857,89.2895,JP4,,,,,"/>
+<approved hash="113,1,382.863,81.0853,J1,,,,,"/>
+<approved hash="113,1,419.777,81.0853,J2,,,,,"/>
+<approved hash="113,1,382.863,63.3053,J10,,,,,"/>
+<approved hash="113,1,419.777,63.3053,J4,,,,,"/>
+<approved hash="113,1,419.777,22.6653,J3,,,,,"/>
+<approved hash="113,1,382.863,21.7847,J9,,,,,"/>
+<approved hash="113,1,382.863,-1.07527,J7,,,,,"/>
+<approved hash="113,1,419.777,-1.07527,J8,,,,,"/>
+<approved hash="113,1,-22.6229,58.2888,BATT,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
