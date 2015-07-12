@@ -5576,7 +5576,7 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <instance part="COUT" gate="G$1" x="86.36" y="63.5"/>
 <instance part="VCC3" gate="G$1" x="86.36" y="99.06"/>
 <instance part="R3" gate="G$1" x="147.32" y="17.78"/>
-<instance part="VCC1" gate="G$1" x="139.7" y="22.86"/>
+<instance part="VCC1" gate="G$1" x="154.94" y="22.86"/>
 <instance part="C1" gate="G$1" x="101.6" y="63.5"/>
 <instance part="U1" gate="A" x="259.08" y="63.5"/>
 <instance part="VCC4" gate="G$1" x="238.76" y="106.68"/>
@@ -5586,7 +5586,7 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <instance part="GND9" gate="1" x="40.64" y="5.08"/>
 <instance part="U2" gate="A" x="154.94" y="12.7"/>
 <instance part="R5" gate="G$1" x="147.32" y="-10.16"/>
-<instance part="VCC5" gate="G$1" x="139.7" y="-5.08"/>
+<instance part="VCC5" gate="G$1" x="154.94" y="-5.08"/>
 <instance part="U3" gate="A" x="154.94" y="-15.24"/>
 <instance part="NRF24" gate="A" x="309.88" y="-10.16"/>
 <instance part="C12" gate="G$1" x="312.42" y="5.08" rot="R90"/>
@@ -5658,19 +5658,6 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<wire x1="139.7" y1="7.62" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
-<junction x="139.7" y="17.78"/>
-<pinref part="VCC1" gate="G$1" pin="VCC"/>
-<wire x1="139.7" y1="22.86" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="G"/>
-<wire x1="154.94" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="129.54" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
-<junction x="139.7" y="7.62"/>
-</segment>
-<segment>
 <pinref part="APM" gate="A" pin="VCC"/>
 <pinref part="VCC7" gate="G$1" pin="VCC"/>
 <wire x1="20.32" y1="0" x2="63.5" y2="0" width="0.1524" layer="91"/>
@@ -5678,19 +5665,6 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <junction x="63.5" y="0"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="-5.08" x2="63.5" y2="0" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="139.7" y1="-20.32" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="-10.16" x2="142.24" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="139.7" y="-10.16"/>
-<pinref part="VCC5" gate="G$1" pin="VCC"/>
-<wire x1="139.7" y1="-5.08" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="G"/>
-<wire x1="154.94" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="129.54" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="139.7" y="-20.32"/>
 </segment>
 <segment>
 <pinref part="ATSHA" gate="U1" pin="VCC"/>
@@ -5728,6 +5702,24 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="VCC8" gate="G$1" pin="VCC"/>
 <wire x1="172.72" y1="-40.64" x2="172.72" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="U3" gate="A" pin="S"/>
+<wire x1="152.4" y1="-10.16" x2="154.94" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-10.16" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="154.94" y="-10.16"/>
+<pinref part="VCC5" gate="G$1" pin="VCC"/>
+<wire x1="154.94" y1="-5.08" x2="154.94" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="U2" gate="A" pin="S"/>
+<wire x1="152.4" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="17.78" x2="154.94" y2="12.7" width="0.1524" layer="91"/>
+<junction x="154.94" y="17.78"/>
+<pinref part="VCC1" gate="G$1" pin="VCC"/>
+<wire x1="154.94" y1="22.86" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5971,22 +5963,6 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="281.94" y1="60.96" x2="276.86" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="60.96" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="U2" gate="A" pin="S"/>
-<wire x1="152.4" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="17.78" x2="154.94" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="U3" gate="A" pin="S"/>
-<wire x1="152.4" y1="-10.16" x2="154.94" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-10.16" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN_POWERRF" class="0">
@@ -6594,27 +6570,51 @@ J10 : free. connected to D2. INT1 (jumper config)</text>
 <junction x="320.04" y="66.04"/>
 </segment>
 </net>
+<net name="N$18" class="0">
+<segment>
+<wire x1="139.7" y1="-20.32" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-10.16" x2="142.24" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="G"/>
+<wire x1="154.94" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="139.7" y="-20.32"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="139.7" y1="7.62" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="G"/>
+<wire x1="154.94" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="129.54" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
+<junction x="139.7" y="7.62"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,441.96,-43.18,IC2,VCC,N$6,,,"/>
-<approved hash="104,1,312.42,-17.78,RFM69,VCC,VCC_RF,,,"/>
+<approved hash="104,1,195.58,-53.34,IC2,VCC,N$6,,,"/>
+<approved hash="104,1,317.5,-33.02,RFM69,VCC,VCC_RF,,,"/>
 <approved hash="113,1,103.271,64.77,C1,,,,,"/>
-<approved hash="113,1,306.028,7.75123,NRF24,,,,,"/>
-<approved hash="113,1,382.863,42.9853,J5,,,,,"/>
-<approved hash="113,1,419.777,42.9853,J6,,,,,"/>
+<approved hash="113,1,311.108,-7.48877,NRF24,,,,,"/>
+<approved hash="113,1,395.563,42.9853,J5,,,,,"/>
+<approved hash="113,1,432.477,42.9853,J6,,,,,"/>
 <approved hash="113,1,84.7569,81.6695,JP2,,,,,"/>
 <approved hash="113,1,140.637,79.1295,JP3,,,,,"/>
-<approved hash="113,1,249.857,89.2895,JP4,,,,,"/>
-<approved hash="113,1,382.863,81.0853,J1,,,,,"/>
-<approved hash="113,1,419.777,81.0853,J2,,,,,"/>
-<approved hash="113,1,382.863,63.3053,J10,,,,,"/>
-<approved hash="113,1,419.777,63.3053,J4,,,,,"/>
-<approved hash="113,1,419.777,22.6653,J3,,,,,"/>
-<approved hash="113,1,382.863,21.7847,J9,,,,,"/>
-<approved hash="113,1,382.863,-1.07527,J7,,,,,"/>
-<approved hash="113,1,419.777,-1.07527,J8,,,,,"/>
+<approved hash="113,1,237.157,99.4495,JP4,,,,,"/>
+<approved hash="113,1,395.563,81.0853,J1,,,,,"/>
+<approved hash="113,1,432.477,81.0853,J2,,,,,"/>
+<approved hash="113,1,395.563,63.3053,J10,,,,,"/>
+<approved hash="113,1,432.477,63.3053,J4,,,,,"/>
+<approved hash="113,1,432.477,22.6653,J3,,,,,"/>
+<approved hash="113,1,395.563,21.7847,J9,,,,,"/>
+<approved hash="113,1,395.563,-1.07527,J7,,,,,"/>
+<approved hash="113,1,432.477,-1.07527,J8,,,,,"/>
 <approved hash="113,1,-20.0829,78.6088,BATT,,,,,"/>
 </errors>
 </schematic>
