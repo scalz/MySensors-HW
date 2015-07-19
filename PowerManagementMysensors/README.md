@@ -50,8 +50,13 @@ How it will work :
 1) Basic Mode : You can enable/disable functions, dc boosters, supervisor, power directly from battery... See jumpers and connectors description
 
 2) Ulpnode mode : Enable JP1, JP2, JP4, JP5 supervisor
-To have ultra low power, it needs to lower voltage arduino and its frequency. So, BOD=1.8V, sleep mode freq : 1-4Mhz.
-So when supervisor < 2v, it toggles interrupt EN_BOOST, so dc Booster 3v starts to charge C1, and arduino wakes up. As the supervisor will maintain interrupt while vcc<2v, you can maintain interrupt by enabling D5 output Arduino and check the C1 voltage level by reading A0 arduino. Then do your tasks (tune frequ clock, enable rf and sensors power, readings...), then tune freq for sleeping, disable D5 and you can put arduino in sleep mode again. C1 will discharge from 3.3v to <2v (need to test C1 value to know discharge time). And again...
+
+To get ultra low power, it needs : 
+- not use watchdog so you can save uA
+- to wake up, use pin change interrupt
+- no bod during sleep mode
+- lower voltage frequency. So, BOD=1.8V, sleep mode freq : 1-4Mhz.
+So, to be able to wake up each period, when supervisor < 2v, it toggles interrupt EN_BOOST, so dc Booster 3v starts to charge C1, and arduino wakes up. As the supervisor will maintain interrupt while vcc<2v, you can maintain interrupt by enabling D5 output Arduino and check the C1 voltage level by reading A0 arduino. Then do your tasks (tune frequ clock, enable rf and sensors power, readings...), then tune freq for sleeping, disable D5 and you can put arduino in sleep mode again. C1 will discharge from 3.3v to <2v (need to test C1 value to know discharge time). And again...
 
 it is possible to monitor battery voltage. But be careful, as I didn't want to consume more power with traditional divider, and have not enough free output to disable by mosfet such divider, 
 I have choosen to use simple ADC read through resistor. Batt voltage must be <= vcc arduino to be able to read. I added protection for eeprom.
