@@ -1,8 +1,8 @@
 # RollerShutterNode SMD version
 
 
-It is a board for controlling rollershutter (0-100%) and detecting end stops.. It have two relays (UP and DOWN) and ACS712 for current sense of motor. 
-You can connect 3 push buttons. This board can be used as dual relay board too, with current sense. It can control 12-220V motors.
+It is a board for controlling rollershutter (0-100%) and detecting end stops.. Two relays for motor (UP and DOWN) and ACS712 for current sense of motor. 
+You can connect 3 push buttons or an external i2c tactile device. This board can be used as dual relay board too, with current sense. It can control 12-220V motors.
 
 
 Note : it is still in dev.
