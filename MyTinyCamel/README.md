@@ -5,7 +5,7 @@ Based on my previous PowerManagement. I have miniaturized it.
 Size : 49.5x23.8 (mm)
 Components size 0805.
 
-####Node sensors with power management features : 
+####Sensors Node with power management features : 
 - power through VBAT directly
 - power through 3V Dc booster
 - mode ultra low power ( < 1uA in sleep mode) needs the onboard 3VDC booster
