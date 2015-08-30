@@ -1,0 +1,68 @@
+[PCB] Noeud très basse conso : MyTinyCamel
+Bonjour,
+
+
+je suis content de partager avec vous deux cartes que je me suis développés. L'électronique n'étant pas mon métier à la base, j'ai tout de même essayé de faire 
+ça le mieux possible, pour moi, mais aussi pour vous. Quand je pars sur un truc mon but est toujours qualité/prix (jcompte pas mon temps c'est pour ma distraction). mais surtout ne pas lésiner 
+sur la qualité, faire les bons compromis quoi. pas facile. ce fut toute une étude! j'ai essayé de faire de la doc français/anglais (car je partage sur le forum mysensors aussi et ça me fait pas de mal 
+un peu d'anglais!). J'espère que cela sera compréhensible!
+
+L'objectif
+
+Vu que je suis un peu paresseux (couper les fils, étamer...) et pas patient! c'est fou mais jpréfère souder des composants, même cms, que de faire du veroboard et les fils! 
+jsuis toujours admiratif quand on me montre un beau veroboard! car moi on me mets plein de fils devant moi ça me fait déprimer!!! vous voyez le genre...
+
+Donc mon but était de ne pas avoir à utiliser ces platines à trous (veroboard) et d'éviter le plus les fils. Surtout si je veux des fonctions avancées, là c'est plus possible les fils.
+La contrepartie est de devoir souder des composants, cms, mais pas de panique avec un ptit peu d'entrainement c'est faisable. après tout dépend c'est sûr, ça peut être plus facile pour certains que pour d'autres j'avoue, mais je partage et puis vous verrez bien...
+
+Donc pas de fils... et de la modularité. Oui, car en fonction des noeuds sensors ou non, sur pile ou non, à base de radios nrf24 ou rfm69, je ne voulais pas avoir 10 designs à faire.
+Si j'ai besoin d'un noeud sur pile, il doit avoir une très bonne autonomie, peu importe le nombre de capteurs. 
+Que peut importe la tension restante dans la batterie, j'ai toujours un bon 3.3v pour les sensors et la radio. 
+Avoir pas mal de connecteurs et de pastilles 3.3V/5V pour pouvoir connecter rapidement les sensors. 
+Et d'autres fonctions aussi comme pouvoir mettre à jour le programme sans fil (ota) et utiliser ou non la signature pour sécuriser les échanges radios si besoin.
+Si je n'ai pas besoin de tout, dans ce cas je ne soude pas tout et je peux ainsi réduire le coût du noeud.
+Pour activer ou non tout ceci j'utilise des jumpers/cavaliers...bref pleins de fonctions. qui peut le plus peut le moins.
+
+Les cartes 
+
+La carte 1 est la première que j'ai commencé à faire, elle était basée sur des travaux de Charles pour son ulpnode (hallard.me) et d'Anticimex/Mysensors. 
+J'avais mixé les deux et ajouter des choses pour mes besoins. Taille 5x5cm.
+Ensuite, il s'est avéré que je me suis amusé à essayé de miniaturiser et cela m'a donné la carte n°2 que j'ai baptisé pour l'occaz MyTinyCamel "Mon ptit chameau" qu'il boit peut !!!
+Taille 5x2.3cm.
+
+Ces deux cartes remplissent quasiment les mêmes fonctions. La première est plus grande, car elle utilise des composants un peu plus grand (1206). C'est un arduino pro mini qu'on vient souder dessus.
+La deuxième est beaucoup plus petite, plus compacte. Deux fois plus petite. Elle utilise des composants plus petits 0805 (c'est soudable) et on soude un atmel cette fois-ci. On va dire que cette carte, pour ceux que la soudure peut effrayer, passez votre chemin et essayer des cartes plus simples pour l'instant comme la première.
+La 2eme carte est plus élaborée aussi j'ai qq trucs en plus comme vous pourrez le voir ensuite.
+
+Quelques caractéristiques :
+
+Les fonctionnalités en commun des 2 cartes :
+- Choix de l'alimentation : directement depuis la batterie Vs Booster 3V embarqué pilotable par une sortie atmel/arduino
+- un autre Booster 5V indépendant si des capteurs ou d'autres montages annexes ont besoin de 5V. Celui-ci n'est pas pilotable.
+- Mode ultra low power (sera compatible avec la lib ulpnode de Charles), nécessite de passer par le Booster 3V embarqué
+- Mise à jour sans fil par OTA
+- Sécurité des communications radio par signature
+
+Carte 1:
+- pour bénéficier du mode basse conso, cela nécessite de désouder régulateur et led sur l'arduino pro mini.
+- tension max pour VIN/VBAT : 5V
+
+Carte 2:
+- elle accepte plus haut en VIN si l'on passe par son régulateur LDO 3.3V entrée maxi 16V.
+- on peut souder ou non la led.
+
+
+
+Tous les fichiers sont disponibles sur mon git à cette adresse : 
+Vous y trouverez : la doc, screenshots et bien sûr les fichiers sources Eagle et les gerbers.
+
+Donc carte 1 (je vais bientôt uploadé les derniers fichiers) adresse github ici :
+et MyTinyCamel (tout est présent mais j'attends les pcbs, donc c'est pas 100% sûr pour le moment). github ici :
+
+Si vous le souhaitez, vous pouvez passer par oshpark pour commander des pcb. Pour cela vous n'aurez juste besoin que du fichier .brd que vous uploaderez sur oshpark au moment de votre commande.
+Sinon vous pouvez aussi utiliser le fichier .zip présent dans le dossier gerbers, et l'envoyer à elecrow ou seeed... pour payer moins cher les pcb.
+Pour la liste des composants, il s'agit du fichier bom_fr.pdf
+Et les overviews, pour les jumpers et le placement des composants.
+
+
+Plus qu'à mettre quelques photos et résultat de conso. Et je vais enfin pouvoir commencer à faire des sketchs optimisés.

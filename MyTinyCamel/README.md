@@ -8,7 +8,7 @@ Components size 0805.
 Node sensors with power management features : 
 - power through VBAT directly
 - power through 3V Dc booster
-- mode ultra low power ( < 1uA in sleep mode)
+- mode ultra low power ( < 1uA in sleep mode) needs the onboard 3VDC booster
 - power through MCP1703 for VIN < 16V
 - Mosfet for radio
 - Mosfet for sensors
@@ -68,29 +68,18 @@ MYSXConnector 1.5 :
 20:	d7
 
 
-How it will work :
-
-1) Basic Mode : You can enable/disable functions, dc boosters, supervisor, power directly from battery... See jumpers and connectors description
-
-2) Ulpnode mode : Enable JP1, JP2, JP3, JP5 supervisor
-
-To get ultra low power, it needs : 
-- don't use watchdog so you can save uA
-- to wake up, use pin change interrupt
-- no bod during sleep mode
-- lower voltage frequency. So, BOD=1.8V, sleep mode freq : 1-4Mhz.
-So, to be able to wake up each period, when supervisor < 2v, it toggles interrupt EN_BOOST, so dc Booster 3v starts to charge C1, and arduino wakes up. As the supervisor will maintain interrupt while vcc<2v, you can maintain interrupt by enabling D5 output Arduino. Then do your tasks (tune frequ clock, enable rf and sensors power, readings...), then tune freq for sleeping, disable D5 and you can put arduino in sleep mode again. C1 will discharge from 3.3v to <2v (need to test C1 value to know discharge time). And again...
-
-it is possible to monitor battery voltage. But be careful, as I didn't want to consume more power with traditional divider, and have not enough free output to disable by mosfet such divider, 
-I have choosen to use simple ADC read through resistor. Batt voltage must be <= vcc arduino to be able to read. I added protection for eeprom.
-
 ### Board overview  
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Top_overview_en.png" alt="Top">    
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom">&nbsp; 
 
 
-Note : it is still in dev. so not tested. I will make some changes I think.
+TODO : 
+- settings description
+- some coding
+...
+
+Note : it is still in dev. so not tested. I am waiting for the pcbs.
 
 
 
