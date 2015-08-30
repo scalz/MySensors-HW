@@ -85,9 +85,9 @@ it is possible to monitor battery voltage. But be careful, as I didn't want to c
 I have choosen to use simple ADC read through resistor. Batt voltage must be <= vcc arduino to be able to read. I added protection for eeprom.
 
 ### Board overview  
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Top_overview_en.png" alt="Top" width="60%" height="60%">    
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Top_overview_en.png" alt="Top">    
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom" width="60%" height="60%">&nbsp; 
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom">&nbsp; 
 
 
 Note : it is still in dev. so not tested. I will make some changes I think.
