@@ -37,6 +37,7 @@ Jumper settings :
 - JP6 : choose if you want to power external eeprom through mosfet VCC sensors or through regulated VCC3 directly
 - JP7 : choose if you want to power radios through mosfet VCC RF or through regulated VCC3 directly
 - JP8 : choose INT2 Mode : INT2 or Interrupt on 2V supervisor (if 2v, wake up arduino, enable dc booster to charge C1) 
+- JP9 : how 3VDC booster is enabled. By Supervisor/atmel pins or by VIN for continuous mode
 
 Atmel Pinout :
 - A1 : Output : Enable/disable RF VCC 
@@ -87,10 +88,11 @@ Links, reference and license :
 
 Copyright scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
-For https://github.com/fallberg/MySensorsNode,
+This board is inspired from the great work of :
+- Patrick Fallberg : https://github.com/fallberg/MySensorsNode,
 Copyright Patrick Fallberg (2015). CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
-For https://hallard.me/category/ulpnode/, 
+- Charles-Henri Hallard : https://hallard.me/category/ulpnode/, 
 Copyright Charles-Henri Hallard (2014). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
 
 
