@@ -84,10 +84,7 @@ So, to be able to wake up each period, when supervisor < 2v, it toggles interrup
 it is possible to monitor battery voltage. But be careful, as I didn't want to consume more power with traditional divider, and have not enough free output to disable by mosfet such divider, 
 I have choosen to use simple ADC read through resistor. Batt voltage must be <= vcc arduino to be able to read. I added protection for eeprom.
 
-### Schematic  
-![schematic](.png)  
-
-### Boards  
+### Board overview  
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Top_overview_en.png" alt="Top" width="60%" height="60%">    
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom" width="60%" height="60%">&nbsp; 
