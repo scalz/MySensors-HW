@@ -89,10 +89,12 @@ Links, reference and license :
 Copyright scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
 This board is inspired from the great work of :
-- Patrick Fallberg : https://github.com/fallberg/MySensorsNode,
+- Patrick Fallberg : https://github.com/fallberg/MySensorsNode
+
 Copyright Patrick Fallberg (2015). CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
-- Charles-Henri Hallard : https://hallard.me/category/ulpnode/, 
+- Charles-Henri Hallard : https://hallard.me/category/ulpnode/
+ 
 Copyright Charles-Henri Hallard (2014). [Attribution-ShareAlike CC BY-SA](https://creativecommons.org/licenses/)
 
 
