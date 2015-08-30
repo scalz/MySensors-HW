@@ -5,7 +5,7 @@ Based on my previous PowerManagement. I have miniaturized it.
 Size : 49.5x23.8 (mm)
 Components size 0805.
 
-Node sensors with power management features : 
+####Node sensors with power management features : 
 - power through VBAT directly
 - power through 3V Dc booster
 - mode ultra low power ( < 1uA in sleep mode) needs the onboard 3VDC booster
@@ -27,7 +27,7 @@ Node sensors with power management features :
 - Smd jumpers.
 
 
-##Jumper settings :
+####Jumper settings :
 - JP1 : VIN selection (power directly from VIN/VBAT | 3V DC Booster | MCP1703 
 - JP2 : if JP1 is set VIN/VBAT, so you can choose if you want VIN/VBAT only, or if you want to use MCP1703
 - JP3 : if JP1 is set on 3VDC Booster, you can enable storage capacitor for ultra low power mode 
@@ -38,14 +38,14 @@ Node sensors with power management features :
 - JP8 : choose INT2 Mode : INT2 or Interrupt on 2V supervisor (if 2v, wake up arduino, enable dc booster to charge C1) 
 - JP9 : how 3VDC booster is enabled. By Supervisor/atmel pins or by VIN for continuous mode
 
-##Atmel Pinout :
+####Atmel Pinout :
 - A1 : Output : Enable/disable RF VCC 
 - A2 : ADC Input used for reading battery voltage (<5v)
 - D3 : optional INT2 or for voltage supervisor control
 - D4 : Output : Enable/disable Sensors 3V Rail 
 - D5 : Output : enable/disable DC Boost 3v
 
-##MYSXConnector 1.5 : 
+####MYSXConnector 1.5 : 
 - 1 :	VIN connected to -> batt vs dc booster vs MCP1703 3.3vreg (max16v)
 - 2 :	VCC3
 - 3 :	VCCIO
