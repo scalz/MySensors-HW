@@ -74,7 +74,7 @@ Components size 0805.
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom">&nbsp; 
 
 
-TODO : 
+####TODO : 
 - settings description
 - some coding
 ...
@@ -83,7 +83,7 @@ Note : it is still in dev. so not tested. I am waiting for the pcbs.
 
 
 
-Links, reference and license : 
+####Links, reference and license : 
 
 Copyright scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
