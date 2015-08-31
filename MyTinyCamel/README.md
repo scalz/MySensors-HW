@@ -69,9 +69,9 @@ Components size 0805.
 
 
 ### Board overview  
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Top_overview_en.png" alt="Top">    
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/_img/Top_overview_en.png" alt="Top">    
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/img/Bottom_overview_en.png" alt="Bottom">&nbsp; 
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyTinyCamel/_img/Bottom_overview_en.png" alt="Bottom">&nbsp; 
 
 
 ####TODO : 
