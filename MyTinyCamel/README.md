@@ -79,7 +79,8 @@ Components size 0805.
 - some coding
 ...
 
-Note : it is still in dev. so not tested. I am waiting for the pcbs.
+Note : it is still in dev. there are some issues which will be fixed in next rev soon
+
 
 
 
