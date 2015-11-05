@@ -28,6 +28,7 @@ Note : it is still in dev.
 - A2 : Down Relay
 - A1 : Up relay
 - I2C connector : SDA, SCL, D3, D4
+- A7 : CTN thermistor to check temperature under Hilink Stepdown
 
 ####Connectors 
 - FTDI for bootloading
