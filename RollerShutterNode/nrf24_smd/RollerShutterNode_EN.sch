@@ -479,7 +479,7 @@
 <text x="1.27" y="31.75" size="2.54" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="1.27" y="24.13" size="2.54" layer="94" font="vector">(c) Scalz</text>
 <text x="93.218" y="6.858" size="2.54" layer="94" font="vector">1</text>
-<text x="1.27" y="18.288" size="2.54" layer="94" font="vector">CC-BY-NC-SA 4.0</text>
+<text x="1.27" y="18.288" size="2.54" layer="94" font="vector">CERN Open Hardware Licence v1.2</text>
 </symbol>
 <symbol name="RELAY-SPDT">
 <wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>

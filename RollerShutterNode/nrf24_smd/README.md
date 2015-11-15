@@ -1,14 +1,9 @@
-# RollerShutterNode
+# RollerShutterNode (NRF24L01+ smd version)
 
 
 It is a board for controlling rollershutter (0-100%) and detecting end stops with ACS712 for current sense of motor. It can be used as a relay board too.
 You can connect 3 push buttons (UP/DOWN/STOP) and/or external i2c device (for tactile, gesture...). 
 It can control 12-220V motors.
-
-It is derived in two versions : 
-- NRF24 smd
-- RFM69(H)W
-
 I will use it with Mysensors lib.
 
 Size : 47x48 (mm)
@@ -18,7 +13,7 @@ Note : it is still in dev.
 
 ####General spec
 - Atmel328p TQFP
-- NRF24 smd or RFM69(H)W footprint
+- NRF24L01+ smd footprint
 - ATSHA204A authentication footprint
 - eeprom footprint for OTA
 - ACS712 5Amp footprint
@@ -70,7 +65,7 @@ Note : it is still in dev.
 
 
 ####Links, reference and license 
-Copyright scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
+Copyright Scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
 
 
