@@ -51,11 +51,6 @@ Note : it is still in dev.
 - Down : Motor Down
 - Source : 12-24v motor source. If using 220v motor, tie it with 12_220 on AC Connector
 
-### Board overview  
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/top_overview1.png" alt="Top">    
-
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/bottom_overview.png" alt="Bottom">&nbsp; 
-
 
 ####TODO : 
 - sketch for rollershutter (buttons, calibration functions, controlling 0-100%...). 
