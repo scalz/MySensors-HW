@@ -1,0 +1,11 @@
+November 15 2015 (Scalz):
+    First version of low power PIR Breakout
+    
+    Features:
+    - Low power PIR board based on TI AN4368
+	- I added 2 potentiometer and some debug points
+    
+   
+    Known issues:
+
+
