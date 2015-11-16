@@ -52,7 +52,7 @@ Note : it is still in dev.
 - Source : 12-24v motor source. If using 220v motor, tie it with 12_220 on AC Connector
 
 
-####TODO : 
+####TODO 
 - sketch for rollershutter (buttons, calibration functions, controlling 0-100%...). 
 - add Bill of Materials
 

@@ -7,5 +7,7 @@ November 15 2015 (Scalz):
 		It can control 12-220V motors.      
    
     Known issues: in debug phase
+		- there was an error on v1.0. I did so much changes in routing that I missed to change something on acs. So the spst relay is always on. too bad.
+		  This is fixed in v1.1
 
 

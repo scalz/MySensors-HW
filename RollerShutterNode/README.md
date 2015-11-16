@@ -62,7 +62,11 @@ Note : it is still in dev.
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/bottom_overview.png" alt="Bottom">&nbsp; 
 
 
-####TODO : 
+####Notes : 
+- there was an error on v1.0. I did so much changes in routing that I missed to change something on acs. So the spst relay is always on. too bad.
+This is fixed in v1.1
+
+####TODO 
 - sketch for rollershutter (buttons, calibration functions, controlling 0-100%...). 
 - add Bill of Materials
 
