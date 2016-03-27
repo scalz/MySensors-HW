@@ -4,16 +4,21 @@
 It is a board for controlling rollershutter (0-100%) and detecting end stops with ACS712 for current sense of motor. It can be used as a relay board too.
 You can connect 3 push buttons (UP/DOWN/STOP) and/or external i2c device (for tactile, gesture...). 
 It can control 12-220V motors.
+
+It is derived in two versions : 
+- NRF24 smd
+- RFM69(H)W
+
 I will use it with Mysensors lib.
 
 Size : 47x48 (mm)
 Components size 0805.
 
-Note : it is still in dev.
+###Important Note : I share this work for educational purpose. Be very careful with this. It's an AC Board which can be lethal. If you don't know what you are doing, I can't tell you enough to not do anything. 
 
 ####General spec
 - Atmel328p TQFP
-- NRF24L01+ smd footprint
+- NRF24 smd or RFM69(H)W footprint
 - ATSHA204A authentication footprint
 - eeprom footprint for OTA
 - ACS712 5Amp footprint
@@ -54,22 +59,23 @@ Note : it is still in dev.
 ### Board overview  
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/top_overview1.png" alt="Top">    
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/bottom_overview.png" alt="Bottom">&nbsp; 
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/top_pcb.png" alt="Top">
+
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/bottom_pcb.png" alt="Bottom">&nbsp; 
 
 
-####TODO  
+####Notes : 
+- removed gerbers as it is still in dev and it's an AC board which can be lethal if not well used..
+
+####TODO 
 - sketch for rollershutter (buttons, calibration functions, controlling 0-100%...). 
-- add Bill of Materials
-
-####Notes
-- there was an error on v1.0. I did so much changes in routing that I missed to change something on acs. So the spst relay is always on. too bad.
-This is fixed in v1.1
+- reduce board size
 
 Note : it is still in dev. 
 
 
 ####Links, reference and license 
-Copyright Scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
+Copyright scalz (2015). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
 
 
