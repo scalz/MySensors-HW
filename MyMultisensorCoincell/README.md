@@ -29,11 +29,11 @@ Note : This is a rev 1.0...and a work in progress as I am now waiting for pcbs.
  
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/top_view.jpg" alt="Top view">    
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/bottom_view.png" alt="Bottom_view view">
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/bottom_view.jpg" alt="Bottom_view view">
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/custombox_1.png" alt="Custombox 1">
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/custombox_1.jpg" alt="Custombox 1">
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/custombox_2.png" alt="Custombox 2">&nbsp;
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/MyMultisensorCoincell/img/custombox_2.jpg" alt="Custombox 2">&nbsp;
 
 ####Notes : About power consumption, what can we expect???
 
