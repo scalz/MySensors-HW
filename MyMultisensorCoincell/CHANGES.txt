@@ -1,0 +1,20 @@
+Feb. 16 2016 (Scalz):
+    First version of MyMultisensor on Coin Cell.
+	
+    Features:
+		- PCB size : 30mmx49mm
+		- Very low power multisensor board powered by Coincell or vin=<3.3V.
+		- Motion detection sensor : can be disabled if not needed all the day, and save more battery.
+		- Temperature/Humidity sensor : SI7021
+		- Ambiant light : OPT3001
+		- MCU : Atmel 328p (Internal RC or external)
+		- Power supply : direct battery no regulator, Coincell, pads to connect other 3.3v batt like 2xAA/AAA. 
+		- Security : ATSHA204A for signing/authentication
+		- Reverse polarity protection
+		- Radio supported : RFM69CW 
+		- Connectors : AVRSPI, FTDI
+
+   
+    Known issues: in progress..
+
+
