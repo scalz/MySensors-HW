@@ -1,29 +1,29 @@
 # MyMultisensorCoincell
 
-	I'm happy to share my first project using coincell. This is a Multisensors board optimized for low power. 
-	It will be able (I hope!) to detect motion, temperature, humidity, ambiant light for 2-3 years min, powered by a CR2032 coin cell; my goals! 
-	I will use it with Mysensors lib.	
+I'm happy to share my first project using coincell. This is a Multisensors board optimized for low power. 
+It will be able (I hope!) to detect motion, temperature, humidity, ambiant light for 2-3 years min, powered by a CR2032 coin cell; my goals! 
+I will use it with Mysensors lib.	
 	
-	Inspired from ST and TI appnotes. I thank them for documentation.
+Inspired from ST and TI appnotes. I thank them for documentation.
 	
-    Note : This is a rev 1.0...and a work in progress as I am now waiting for pcbs.
+Note : This is a rev 1.0...and a work in progress as I am now waiting for pcbs.
 
 
 ####General spec
 
-	- PCB size : 30mmx49mm
-	- Very low power multisensor board powered by Coincell or vin=<3.3V.
-	- Motion detection sensor : LHI968. Motion detection can be disabled if not needed all the day, and save more battery.
-	- Temperature/Humidity sensor : SI7021
-	- Ambiant light : OPT3001
-	- MCU : Atmel 328p (Internal RC or external)
-	- Power supply : direct battery no regulator, Coincell, pads to connect other 3.3v batt like 2xAA/AAA. It's designed to be thin, so coincell or AAA is better..
-	- Security : ATSHA204A for signing/authentication
-	- Reverse polarity protection
-	- Radio supported : RFM69CW 
-	- Connectors : AVRSPI, FTDI
-	- One optional LED for indicator on D7
-	- One optional LED for motion trigger indicator (mainly for debug purpose, there are also so smd probe tests points for PIR circuit)
+- PCB size : 30mmx49mm
+- Very low power multisensor board powered by Coincell or vin=<3.3V.
+- Motion detection sensor : LHI968. Motion detection can be disabled if not needed all the day, and save more battery.
+- Temperature/Humidity sensor : SI7021
+- Ambiant light : OPT3001
+- MCU : Atmel 328p (Internal RC or external)
+- Power supply : direct battery no regulator, Coincell, pads to connect other 3.3v batt like 2xAA/AAA. It's designed to be thin, so coincell or AAA is better..
+- Security : ATSHA204A for signing/authentication
+- Reverse polarity protection
+- Radio supported : RFM69CW 
+- Connectors : AVRSPI, FTDI
+- One optional LED for indicator on D7
+- One optional LED for motion trigger indicator (mainly for debug purpose, there are also so smd probe tests points for PIR circuit)
 
 ### Overview 
  
