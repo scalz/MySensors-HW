@@ -1,4 +1,4 @@
-Copyright Scalz 2015.
+Copyright Scalz 2016.
 This design is licensed under the CERN OHL v. 1.2.
 You may redistribute and modify this design under the terms of the
 CERN OHL v.1.2. (http://ohwr.org/cernohl). This design is distributed

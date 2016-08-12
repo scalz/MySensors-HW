@@ -1,2 +1,3 @@
 For changes to the product, please notify the following contact points:
 scalz (Scalz github)
+https://www.openhardware.io/view/22/Roller-Shutter-Node
