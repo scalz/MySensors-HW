@@ -19,7 +19,7 @@ I am using it with Mysensors lib. It's fun :)
 ------
 
 |General spec.|  |
-|--|--|--|
+|---|---|---|
 |Size |44.4*45.4 (mm) |
 | Components size | 0805 |
 | MCU | Atmel328p TQFP |
@@ -48,14 +48,14 @@ I am using it with Mysensors lib. It's fun :)
 
 ####AC Connectors description
 |Connector|  |
-|--|--|--|
+|---|---|---|
 | Input AC | connect to AC line L to Live and N to Neutral |
 | MotorPowerSource | for 12-24VDC just connect power source to 12_230 screwterminal, for 110-230V connect together the pins from Motor Power screwterminal |
 |Motor Direction | Motor Up and Down lines
 
 ####Arduino Pin description
 |Arduino sketch define| Arduino Pin | description |
-|--|--|--|
+|---|---|---|
 | MY_OTA_FLASH_SS | 8 | EEprom CS pin |
 | ATSHA204_PIN | 17 | A3 Arduino Digital I/O pin number for ATSHA204A sot23 ic (for authentication) |
 | RELAY_UPDOWN  | A1 | Digital I/O pin number for relay SPDT |
@@ -126,7 +126,7 @@ Note: the example sketch is for Mysensors v2.x. You can find it in example folde
 
 The sketch present the following Mysensors CHILD_IDs, presented to a controller for instance :
 |CHILD_ID| Description |
-|--|--|
+|---|---|
 | CHILD_ID_ROLLERSHUTTER | handle UP/DOWN/STOP/PERCENT |
 | CHILD_ID_AUTOCALIBRATION | remotely start a calibration |
 | CHILD_ID_TEMPERATURE | onboard temperature sensor, to monitor board&Hilink temperature |
@@ -175,7 +175,7 @@ But if you think information here is worth of some money, or want to reward me, 
 Or you can also order pcb here :
 I will earn a little percentage that will allow me to order proto pcb and share more fun design.
 
-**Enjoy :)**
+Enjoy :)
 
 ### Contributors
 ------
