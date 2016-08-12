@@ -75,12 +75,12 @@ I am using it with Mysensors lib. It's fun :)
 - There are other option for just detecting a simple trigger, sure. I looked at it briefly, there was not a so big footprint saving, and I thought the current sensor would add more verstality to the board.
 
 **Why so much capa, using filtering for analog etc..**
-- on my boards, I don't need everything, all caps etc. But it's there, in case, for debug, still useful when there are some footprints available.
+- some ferrites, caps etc. are not all mandatory. they help to improve things but without some parts it works well. It's there, in case, for debug, and still useful when there are some footprints available.
 
 etc..
 
 Finally :
-- as each new thing I make, I enjoy the new challenge
+- as each new thing I make, I enjoy the new challenge.
 - I have tried to make a board dedicated for RollershutterNode with autocalibration, with as much features/options/versatility I could with the available footprint. 
 
 ####About the ACS current sensor
@@ -125,8 +125,8 @@ Note: the example sketch is for Mysensors v2.x. You can find it in example folde
 3. State and settings of rollershutter are stored in eeprom.
 
 The sketch present the following Mysensors CHILD_IDs, presented to a controller for instance :
-|CHILD_ID| Description |
-|---|---|
+| CHILD_ID | Description |
+|---|---|---|
 | CHILD_ID_ROLLERSHUTTER | handle UP/DOWN/STOP/PERCENT |
 | CHILD_ID_AUTOCALIBRATION | remotely start a calibration |
 | CHILD_ID_TEMPERATURE | onboard temperature sensor, to monitor board&Hilink temperature |
