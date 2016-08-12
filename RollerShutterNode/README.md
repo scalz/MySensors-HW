@@ -1,4 +1,4 @@
-# RollerShutterNode
+# MyRollerShutter
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/Rollershutter13.jpg" alt="RollershutterNode"> 
 
