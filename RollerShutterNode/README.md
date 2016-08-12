@@ -152,7 +152,7 @@ etc..
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/pcb_img1.png" alt="pcb_img1">&nbsp; 
 
 ###Notes : 
-
+------
 
 ###TODO
 ------
@@ -172,6 +172,9 @@ I will earn a little percentage that will allow me to order proto pcb and share 
 
 ### Contributors
 ------
+Special thanks to:
+- Mysensors Team for its great work
+- Adafruit, sparkfun, TI, atmel etc.. for all educational infos they share
 
 ###Links, reference and license 
 ------
