@@ -176,7 +176,7 @@ But if you think information here is worth of some money, or want to reward me, 
 Or you can also order pcb here :
 I will earn a little percentage that will allow me to order proto pcb and share more fun design.
 
-Enjoy :)
+Or pay me a protein smoothie if you see me! oh well, a beer is ok too :)
 
 ### Contributors
 ------
@@ -191,3 +191,5 @@ https://www.openhardware.io/view/22/Roller-Shutter-Node
 Copyright Scalz (2016). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
 
 This is an opensource hardware. So please respect at least license and do what you want with it ;)
+
+Enjoy :)
