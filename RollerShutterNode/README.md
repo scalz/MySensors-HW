@@ -125,14 +125,15 @@ Note: the example sketch is for Mysensors v2.x. You can find it in example folde
 3. State and settings of rollershutter are stored in eeprom.
 
 The sketch present the following Mysensors CHILD_IDs, presented to a controller for instance :
-| CHILD_ID | Description |
+
+| CHILD_ID | Description | |
 |---|---|---|
 | CHILD_ID_ROLLERSHUTTER | handle UP/DOWN/STOP/PERCENT |
 | CHILD_ID_AUTOCALIBRATION | remotely start a calibration |
 | CHILD_ID_TEMPERATURE | onboard temperature sensor, to monitor board&Hilink temperature |
 | CHILD_ID_ENDSTOP | endstop. for debugging in case...Set it to simulate an endstop during calibration and tell the node that the shutter has reached the endstop (in case no mechanical switch etc..) |
 | CHILD_ID_PERCENT | Rollershutter PERCENT for controller which are not Mysensors 2.0 compliant yet |
-| CHILD_ID_CURRENT |Current sensor value, for debugging..|
+| CHILD_ID_CURRENT |Current sensor value, for debugging.. |
 
 **At first launch**, the node will use the default values in the state machine and will know it's not calibrated. So, you can launch a calibration. That will automatically :
 
