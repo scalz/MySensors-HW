@@ -9,7 +9,7 @@ Of course, it can also be used as a relay board.
 
 It is derived in two versions : 
 - NRF24 smd
-- RFM69(H)W
+- RFM69CW
 
 I will use it with Mysensors lib.
 
@@ -65,7 +65,7 @@ I will use it with Mysensors lib.
 
 ####Q&A about my personal choice
 Why not an ESP?
-- I like these chips. But I don't want wifi for my rollershutter nodes. I prefer to use subghz+atsha signing ic.
+- I like these chips. But I don't want wifi for my rollershutter nodes. I prefer to use subghz radio+atsha signing ic.
 
 Why current sensor for endstop detection?
 - There are other option for just detecting a simple trigger, sure. I looked at it briefly, there was not a so big footprint saving, and I thought the current sensor would add more verstality to the board.
@@ -73,14 +73,11 @@ Why current sensor for endstop detection?
 Why so much capa, using filtering for analog etc..
 - on my boards, I don't need everything, all caps etc. But it's there, in case, for debug, still useful when there are some footprints available.
 
-Is not Atmel 328p a bit memory limited?
-- I agree. the sketch can handle OTA, signing auth, the shutter, mysensors lib and the buttons. Add a big i2c for instance, and there can be a memory limit. 
-That's why I have made another board (not released yet) a bit more featured, based on a 32bits, up to 256K mcu. 
-But I think we can do a lot with the very common 328 mcu and it's cheap too.
+etc..
 
 Finally :
 - as each new thing I make, I enjoy the new challenge
-- I have tried to make a board dedicated for RollershutterNode with autocalibration, with as much features/options/versatility I could with the available footprint. You will see on my 32bits rev2 that I have been a bit more crazy :)
+- I have tried to make a board dedicated for RollershutterNode with autocalibration, with as much features/options/versatility I could with the available footprint. 
 
 ####About the ACS current sensor
 
