@@ -1,5 +1,8 @@
 # Low Power PIR Breakout
 
+Note: Deprecated, I will update it soon.
+
+
 It is a small, slim, low power PIR Breakout board for evaluation on breadboard, or it can be integrated in small enclosure.
 
 It is based on TI AN4368. Changes I made are :
