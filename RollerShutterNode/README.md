@@ -15,8 +15,11 @@ I will use it with Mysensors lib.
 
 ###Important Note : I share this work for educational purpose. Be very careful with this. It's an AC Board which can be lethal. If you don't know what you are doing, I can't tell you enough to not do anything. 
 
-####General spec
-_ Size : 44.4*45.4 (mm)
+###General specs
+------
+
+####Spec
+- Size : 44.4*45.4 (mm)
 - Components size : 0805
 - MCU : Atmel328p TQFP
 - two versions : NRF24 smd or RFM69CW
@@ -63,10 +66,13 @@ _ Size : 44.4*45.4 (mm)
 ####Q&A about my personal choice
 Why not an ESP?
 - I like these chips. But I don't want wifi for my rollershutter nodes. I prefer to use subghz+atsha signing ic.
+
 Why current sensor for endstop detection?
 - There are other option for just detecting a simple trigger, sure. I looked at it briefly, there was not a so big footprint saving, and I thought the current sensor would add more verstality to the board.
+
 Why so much capa, using filtering for analog etc..
 - on my boards, I don't need everything, all caps etc. But it's there, in case, for debug, still useful when there are some footprints available.
+
 Is not Atmel 328p a bit memory limited?
 - I agree. the sketch can handle OTA, signing auth, the shutter, mysensors lib and the buttons. Add a big i2c for instance, and there can be a memory limit. 
 That's why I have made another board (not released yet) a bit more featured, based on a 32bits, up to 256K mcu. 
@@ -84,11 +90,12 @@ ACS reading measurement results, from 0 to 1000W by 100W step :
  
 For fun, this is the light bulbs I have used to do my measurements (5 lights bulbs can be powered separately, the other row in one time, so it's possible to do 100W steps)
 
-<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/load_calibration_tool_for_fun.png" alt="load test">
+<img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/load_calibration_tool_for_fun.jpg" alt="load test">
 
 For detail about opamp circuit see schematic.
 
 ###Example of use of this board : RollershutterNode 
+------
 
 ####How is the Rollershutter motor controlled:
 
@@ -132,6 +139,7 @@ So, you can launch a calibration. That will automatically :
 etc..
 
 ###Overview
+------
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/rollershutternode_sch.png" alt="schematic">     
 
@@ -147,24 +155,26 @@ etc..
 
 
 ###TODO
+------
 - 3d insulating case
 - improve things. always improve :)
 
 ###Donations
+------
 
 I'm trying to make opensource projects. I do this for free and sharing spirit. I don't do ads etc..
 But if you think information here is worth of some money, or want to reward me, feel free to send any amount through paypal.
-| [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PWVDL2P64FDVU) | 
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PWVDL2P64FDVU)  
 
 Or you can also order pcb here :
 I will earn a little percentage that will allow me to order proto pcb and share more fun design.
 
-Thanks
+### Contributors
 ------
 
-### Contributors
-
 ###Links, reference and license 
+------
 https://www.openhardware.io/view/22/Roller-Shutter-Node
 
 Copyright Scalz (2016). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
