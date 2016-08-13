@@ -57,13 +57,13 @@ I am using it with Mysensors lib. It's fun :)
 |Arduino sketch define| Arduino Pin | description |
 |---|---|---|
 | MY_OTA_FLASH_SS | 8 | EEprom CS pin |
-| ATSHA204_PIN | 17 | A3 Arduino Digital I/O pin number for ATSHA204A sot23 ic (for authentication) |
-| RELAY_UPDOWN  | A1 | Digital I/O pin number for relay SPDT |
-| RELAY_POWER | A2 | Digital I/O pin number for relay SPST : Normally open, power off rollershutter motor, if A2==1 and A1==0 moveup, if A2==1 and A1==1 movedown, if A2==0 power off |
+| ATSHA204_PIN | 17/A3 | Arduino Digital I/O pin number for ATSHA204A sot23 ic (for authentication) |
+| RELAY_UPDOWN  | 15/A1 | Digital I/O pin number for relay SPDT |
+| RELAY_POWER | 16/A2 | Digital I/O pin number for relay SPST : Normally open, power off rollershutter motor, if A2==1 and A1==0 moveup, if A2==1 and A1==1 movedown, if A2==0 power off |
 | DEBUG_LED |  6 | Digital I/O pin number for onboard debug led |
 | BUTTON_STOP | 3 | Digital I/O pin number for button Stop |
-| BUTTON_UP | 18 | Digital I/O pin number for button Up or I2C |
-| BUTTON_DOWN | 19  | Digital I/O pin number for button Down or I2C |
+| BUTTON_UP | 18/A4 | Digital I/O pin number for button Up or I2C |
+| BUTTON_DOWN | 19/A5  | Digital I/O pin number for button Down or I2C |
 | ACS712_SENSOR | A7 | ADC pin for ACS712 current sensor |
 | DS18B20_PIN | 4 | One Wire Temperature sensor for onboard monitoring |
 
