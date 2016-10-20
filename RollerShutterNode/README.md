@@ -2,7 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/Rollershutter13.jpg" alt="RollershutterNode"> 
 
-This is a board for controlling rollershutters (0-100%) and detecting end stops with ACS712 for current sense of motor. It can control DC or AC motors, 12 to 230V.
+This is a board for controlling rollershutters (0-100%) and detecting end stops with ACS712 for current sense of motor. 
+It can control 3-wire motor only (Power, Up, Down wires), DC or AC, 12 to 230V. It's fine for me as I'm using AC motor. But this board can't work with 2wire DC motor.
 You can connect 3 push buttons (UP/DOWN/STOP) and/or external i2c device (for tactile, gesture...). 
 
 Of course, it can also be used as a relay board.
