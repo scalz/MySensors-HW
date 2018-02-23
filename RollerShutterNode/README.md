@@ -8,19 +8,20 @@ You can connect 3 push buttons (UP/DOWN/STOP) and/or external i2c device (for ta
 
 Of course, it can also be used as a relay board.
 
-It is derived in two versions : 
+It is derived in two versions :
+
 - NRF24 smd
 - RFM69CW
 
 I am using it with Mysensors lib. It's fun :)
 
-###Important Note : I share this work for educational purpose. Be very careful with this. It's an AC Board which can be lethal. If you don't know what you are doing, I can't tell you enough to not do anything. 
+### Important Note : I share this work for educational purpose. Be very careful with this. It's an AC Board which can be lethal. If you don't know what you are doing, I can't tell you enough to not do anything. 
 
-###General 
+### General 
 ------
 
-|General spec.|  |
-|---|---|---|
+|General spec.|  | 
+|---|---|
 |Size |44.4*45.4 (mm) |
 | Components size | 0805 |
 | MCU | Atmel328p TQFP |
@@ -33,7 +34,8 @@ I am using it with Mysensors lib. It's fun :)
 | Screw terminals | 5mm pitch. Input AC, Motor Power Source, Motor Direction|
 | Extension connectors | 3x JST 1mm pitch connectors : FTDI, AVRSPI, IOs | 
 
-####Onboard safety:
+#### Onboard safety:
+
 - Varistor 
 - 5Amp fuse on AC Mains Input to handle relays. 
 - 1Amp fuse for Hilink AC/DC Stepdown. 
@@ -42,19 +44,20 @@ I am using it with Mysensors lib. It's fun :)
 - Milling slots for additional creepage.
 - you can also : put some liquid tape on your AC pcb pads, and use an insulating box.
 
-####Extension Connectors description
+#### Extension Connectors description
+
 - FTDI : JST 1mm pitch connector
 - AVRSPI : JST 1mm pitch connector
 - IOs : JST 1mm pitch connector -> 3V/GND/A4/A5/D3, for UP/DOWN/STOP buttons or I2C for external breakout (tactile switch, gesture...) or some shields I have designed :)
 
-####AC Connectors description
+#### AC Connectors description
 |Connector|  |
-|---|---|---|
+|---|---|
 | Input AC | connect to AC line L to Live and N to Neutral |
 | MotorPowerSource | for 12-24VDC just connect power source to 12_230 screwterminal, for 110-230V connect together the pins from Motor Power screwterminal |
-|Motor Direction | Motor Up and Down lines
+|Motor Direction | Motor Up and Down lines |
 
-####Arduino Pin description
+#### Arduino Pin description
 |Arduino sketch define| Arduino Pin | description |
 |---|---|---|
 | MY_OTA_FLASH_SS | 8 | EEprom CS pin |
@@ -68,23 +71,24 @@ I am using it with Mysensors lib. It's fun :)
 | ACS712_SENSOR | A7 | ADC pin for ACS712 current sensor |
 | DS18B20_PIN | 4 | One Wire Temperature sensor for onboard monitoring |
 
-####Q&A about my personal choice
-**Why not an ESP?**
+#### Q&A about my personal choice
+##### Why not an ESP?
 - I like these chips. But I don't want wifi for my rollershutter nodes. I prefer to use subghz radio+atsha signing ic.
 
-**Why current sensor for endstop detection?**
+##### Why current sensor for endstop detection?
 - There are other option for just detecting a simple trigger, sure. I looked at it briefly, there was not a so big footprint saving, and I thought the current sensor would add more verstality to the board.
 
-**Why so much capa, using filtering for analog etc..**
+##### Why so much capa, using filtering for analog etc..
 - some ferrites, caps etc. are not all mandatory. they help to improve things but without some parts it works well. It's there, in case, for debug, and still useful when there are some footprints available.
 
 etc..
 
 Finally :
+
 - as each new thing I make, I enjoy the new challenge.
 - I have tried to make a board dedicated for RollershutterNode with autocalibration, with as much features/options/versatility I could with the available footprint. 
 
-####About the ACS current sensor
+#### About the ACS current sensor
 
 ACS reading measurement results, from 0 to 1000W by 100W step :
 
@@ -96,10 +100,9 @@ For fun, this is the light bulbs I have used to do my measurements (5 lights bul
 
 For detail about opamp circuit see schematic.
 
-###Example of use of this board : RollershutterNode 
-------
+### Example of use of this board : RollershutterNode 
 
-####How is the Rollershutter motor controlled:
+#### How is the Rollershutter motor controlled:
 
 On-board, there are 2x10Amp Relays. Rollershutter motor don't use 10Amp of course, nor 5Amp. May we expect no need of snubber, if using over rated relays? I hope :) If mandatory for you then, it should be external, not enough space onboard. That said, for a simple relay board too, you can control lot of thing with 10amp.
 
@@ -109,7 +112,7 @@ So, we have 2 relays, for the rollershutter:
 - 1X NO-NC that you can toggle, and drive Up, or Down the rollershutter motor. Remember this relay needs to be enabled by the previous one.
     So relays are "interlocked", you can't enable "Up" and "Down" outputs to motor at same time and burn your motor.
 
-####How to open/close 0-100%
+#### How to open/close 0-100%
 
 We need to detect the up and down endstops. It is managed by the onboard ACS7125 sensor. It will senses the motor current flow and we will read it with ADC on arduino. 
 When motor is active, there is a power consumption. And when an up or down end is toggled, the motor stops (because of mechanical switch...). There is no power consumption. 
@@ -117,7 +120,7 @@ When motor is active, there is a power consumption. And when an up or down end i
 As you can see, with ACS712, we can know in which state we are. We are able to read some kind of power consuption curve too if needed and no mechanical ends switch available..
 So, we need to know how long it takes to open the rollershutter, and to close (it may be not the exact timing open vs close time). 
 
-####Example sketch 
+#### Example sketch 
 
 Note: the example sketch is for Mysensors v2.x. You can find it in example folder. It is state machine based, so no blocking loop. It's not very polished but it's working. I miss time, too much ideas&projects..I will look at it later. 
 
@@ -127,8 +130,8 @@ Note: the example sketch is for Mysensors v2.x. You can find it in example folde
 
 The sketch present the following Mysensors CHILD_IDs, presented to a controller for instance :
 
-| CHILD_ID | Description | |
-|---|---|---|
+| CHILD_ID | Description | 
+|---|---|
 | CHILD_ID_ROLLERSHUTTER | handle UP/DOWN/STOP/PERCENT |
 | CHILD_ID_AUTOCALIBRATION | remotely start a calibration |
 | CHILD_ID_TEMPERATURE | onboard temperature sensor, to monitor board&Hilink temperature |
@@ -145,8 +148,7 @@ The sketch present the following Mysensors CHILD_IDs, presented to a controller 
 5. If you push Up button, that will try to fully open. Down, Stop buttons will do their job too. The node store the new position in eeprom. From your controller, set a PERCENT and that will open as you want your shutter. so fun, so cool :)
 etc..
 
-###Overview
-------
+### Overview
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/rollershutternode_sch.png" alt="schematic">     
 
@@ -158,16 +160,14 @@ etc..
 
 <img src="https://raw.githubusercontent.com/scalz/MySensors-HW/development/RollerShutterNode/img/pcb_img1.png" alt="pcb_img1">&nbsp; 
 
-###Notes : 
-------
+### Notes : 
 
-###TODO
-------
+### TODO
+
 - 3d insulating case
 - improve things. always improve :)
 
-###Donations
-------
+### Donations
 
 I'm trying to make opensource projects. I do this for free and sharing spirit. I don't do ads etc..
 But if you think information here is worth of some money, or want to reward me, feel free to send any amount through paypal.
@@ -180,13 +180,13 @@ I will earn a little percentage that will allow me to order proto pcb and share 
 Or pay me a protein smoothie if you see me! oh well, a beer is ok too :)
 
 ### Contributors
-------
+
 Special thanks to:
 - Mysensors Team for its great work
 - Adafruit, sparkfun, TI, atmel etc.. for all educational infos they share
 
-###Links, reference and license 
-------
+### Links, reference and license 
+
 https://www.openhardware.io/view/22/Roller-Shutter-Node
 
 Copyright Scalz (2016). released under the [CERN Open Hardware Licence v1.2](http://ohwr.org/cernohl)
