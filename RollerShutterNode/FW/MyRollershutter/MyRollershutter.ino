@@ -66,6 +66,9 @@ float oldTemperature     = 0;
 float hilinkTemperature  = 0;
 OneWire  ow_ds1820(DS18B20_PIN);
 
+//Transmission time
+unsigned long LastTransmission = 0;
+
 // Authentication
 const int sha204Pin = ATSHA204_PIN;
 //atsha204Class sha204(sha204Pin);
@@ -228,9 +231,13 @@ void loop() {
     tx = true; 
     ShutterStop(); 
   } 
-  oldTemperature = hilinkTemperature;
-  if (tx) send(msgTemperature.set((uint8_t)hilinkTemperature), 1);  // TODO problem sending float to jeedom???weird..need to check  
-
+  if (millis()-LastTransmission)>FORCE_TRANSMIT_INTERVAL)    tx=true;
+  
+  if (tx) {
+    send(msgTemperature.set((uint8_t)hilinkTemperature), 1);  // TODO problem sending float to jeedom???weird..need to check  
+    oldTemperature = hilinkTemperature;
+    LastTransmission=millis();
+  }
 }
 /* ======================================================================
 Function: receive

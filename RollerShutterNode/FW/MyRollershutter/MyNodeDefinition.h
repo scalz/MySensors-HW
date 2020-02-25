@@ -24,6 +24,8 @@
 #define MY_RFM69_ATC_LEVEL 70   // Uncomment and set RSSI target for ATC mode. Not mandatory for GW
 //#define MY_RFM69_LISTENMODE   // Uncomment to enable ListenMode (RX duty cycle communication for sleeping node)
 
+// set timeout for transport init (if gateway is down)
+#define MY_TRANSPORT_WAIT_READY_MS 30000
 
 //#define MY_NODE_LOCK_FEATURE //!< Enable lockdown of node if suspicious activity is detected
 
@@ -89,7 +91,7 @@
 #define TEMPERATURE_ALARM         60                  // temperature threshold for alarm
 
 #define TEMP_MEASURE_INTERVAL     3000                // How many milli seconds between each measurement
-#define FORCE_TRANSMIT_INTERVAL   30                  // number of seconds, the sensor is forced to report all values to the controller
+#define FORCE_TRANSMIT_INTERVAL   30*1000             // number of milliseconds, the sensor is forced to report all values to the controller
 #define TEMP_TRANSMIT_THRESHOLD   2                   // how much the temperature should have changed since last time it was transmitted. 
 
 // ********************* BUTTONS STATES **********************************************
